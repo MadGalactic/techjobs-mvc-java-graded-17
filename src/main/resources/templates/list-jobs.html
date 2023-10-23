@@ -12,15 +12,12 @@
 
   <!-- TODO #1 - Use a loop to display job results in a table. -->
 
+  <div th:fragment="loop-jobs">
     <th:block th:each="job : ${jobs}">
       <table class="job-listing">
         <tr>
           <td>ID</td>
           <td th:text="${job.id}"></td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td th:text="${job.name}"></td>
         </tr>
         <tr>
           <td>Name</td>
@@ -44,6 +41,7 @@
         </tr>
       </table>
     </th:block>
+  </div>
 
 
 
